@@ -14,4 +14,7 @@ body {
     width: 100%
   }
 
-  
+  .form__item--textarea {
+    width: 100%;
+    min-height: 100px;
+  }

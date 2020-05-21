@@ -10,7 +10,8 @@
   <body>
     <main class="main">
       <h1 class="header">Hello! Fill the form, please...</h1>
-      <form class="form">
+      
+      <form class="form" action="https://dev.cotenfrontend.pl" method="post">
         <p>
           <label for="firstName">Your first name:</label>
           <input
@@ -55,8 +56,8 @@
             <label>Postal code:
             <input
               class="form__item"
-              type="number"
               name="postalCode"
+              pattern="[0-9]{2}-[0-9]{3}"
               placeholder="Please enter your postal code..."/>
             </label>
           </p>
@@ -143,15 +144,49 @@
           </label>
         </p>
       </fieldset>
+
+      <p>
+        <label>Add a picture (may be a funny cat)!
+        <input
+          class="form__item"
+          type="file"
+          id="picture"
+          name="picture"/>
+        </label>
+      </p>
+
+      <p>
+        <label for="genre">Select music genre:</label>
+        <select id="genre">
+          <option value="genre-1">Pop</option>
+          <option value="genre-2">Alternative</option>
+          <option value="genre-3">Hardrock</option>
+          <option value="genre-4">Electronic</option>
+          <option value="genre-0">Other...</option>
+        </select>
+      </p>
+
+      <p>
+        <label class="form__item" for=yourSuggestion">Want to add anything more?</label>
+        <textarea class="form__item--textarea" id="yourSuggestion" name="yourSuggestion">In my opinion...</textarea>
+      </p>
+
+    </fieldset>
       
       <p>
         <label><input name="agreement" type="checkbox">
         I agree to process my data...</label>
       </p>
+
       <p>
         <label><input name="newsletterAgreement" type="checkbox">
         I want to get a newsletter! (probably no)</label>
       </p>
+      
+      <p>
+        <input value="Send" type="submit">
+      </p>
+
       </form>
     </main>
   </body>
