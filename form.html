@@ -7,14 +7,62 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-<body>
-  <header>
-    <h1 class="form-header"> Hello! Fill the form, please...</h1>
-  </header>
-  <main>
+  <body>
+    <main class="main">
+      <h1 class="header">Hello! Fill the form, please...</h1>
+      <form class="form">
+        <p>
+          <label for="firstName">Your first name:</label>
+          <input
+            class="form__item"
+            type="text"
+            name="firstName"
+            placeholder="Please enter your first name..."
+            id="firstName"/>
+        </p>
 
-  </main>
-   
-    
-</body>
+        <p>
+          <label>Your last name:
+          <input
+            class="form__item"
+            type="text"
+            name="lastName"
+            placeholder="Please enter your last name..."/>
+          </label>
+        </p>
+
+        <fieldset>
+          <legend>Address</legend>
+          <p>
+            <label>Country:
+            <input
+              class="form__item"
+              type="text"
+              name="country"
+              placeholder="Please enter your country..."/>
+            </label>
+          </p>
+          <p>
+            <label>City:
+            <input
+              class="form__item"
+              type="text"
+              name="city"
+              placeholder="Please enter your city..."/>
+            </label>
+          </p>
+          <p>
+            <label>Postal code:
+            <input
+              class="form__item"
+              type="text"
+              name="postalCode"
+              placeholder="Please enter your postal code..."/>
+            </label>
+          </p>
+        </fieldset>
+
+      </form>
+    </main>
+  </body>
 </html>

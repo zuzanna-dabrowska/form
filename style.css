@@ -1,15 +1,20 @@
-html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
-  body {
+body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       background: #3f1b37;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color: white;
   }
+
+  .form {
+
+  }
+
+  .form__item {
+    display: block;
+    width: 100%
+  }
+
+  
