@@ -55,7 +55,7 @@
             <label>Postal code:
             <input
               class="form__item"
-              type="numbers"
+              type="number"
               name="postalCode"
               placeholder="Please enter your postal code..."/>
             </label>
@@ -87,6 +87,71 @@
         </p>
       </fieldset>
 
+      <fieldset>
+        <legend>About</legend>
+        <p>
+          <label>Type your happy number!:
+          <input
+            class="form__item"
+            type="number"
+            name="happyNumber"
+            placeholder="Please enter your number..."/>
+          </label>
+        </p>
+        <p>
+          <label>Your phone number (reverse):
+          <input
+            class="form__item"
+            type="tel"
+            id="tel"
+            name="telephone"
+            placeholder="Please enter your phone number..."/>
+          </label>
+        </p>
+        <p>
+          <label>Type your email:
+          <input
+            class="form__item"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Please enter your email..."/>
+          </label>
+        </p>
+        <p>
+          <label>How much do you enjoy filling the form?
+          <input
+            class="form__item range--js"
+            type="range"
+            min="0"
+            max="100"
+            step="10"
+            id="range"
+            name="enjoyRange"
+            placeholder="Please enter your email..."/>
+          </label>
+        </p>
+
+        <p>
+          <label>Come up with a password suggestion!
+          <input
+            class="form__item"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="What is the secret password?"/>
+          </label>
+        </p>
+      </fieldset>
+      
+      <p>
+        <label><input name="agreement" type="checkbox">
+        I agree to process my data...</label>
+      </p>
+      <p>
+        <label><input name="newsletterAgreement" type="checkbox">
+        I want to get a newsletter! (probably no)</label>
+      </p>
       </form>
     </main>
   </body>
